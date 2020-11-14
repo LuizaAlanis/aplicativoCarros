@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonAdicionarNovo"
+        android:text="Adicionar novo carro" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/radioGroup"
+        android:layout_height="wrap_content" >
+        <RadioButton
+            android:id="@+id/radioButtonMenorMaior"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ordenar do mais barato para o mais caro" />
+
+        <RadioButton
+            android:id="@+id/radioButtonMaiorMenor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ordenar do mais caro para o mais barato" />
+    </RadioGroup>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewCarro"/>
+</LinearLayout>
