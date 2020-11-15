@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="20dp"
+    android:padding="30dp"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,53 +8,79 @@
     tools:context=".DetalhesActivity">
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Atualizar dados"
         android:textAlignment="center"
-        android:text="Atualizar dados do carro" />
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextMarcaDet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:hint="Informe a marca do carro"/>
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="100dp"
+        android:hint="Informe a marca do carro"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="82dp" />
 
     <EditText
         android:id="@+id/editTextModeloDet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
         android:layout_marginTop="10dp"
-        android:hint="Informe o modelo do carro"/>
+        android:hint="Informe o modelo do carro"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMarcaDet"
+        tools:layout_editor_absoluteX="24dp" />
 
     <EditText
         android:id="@+id/editTextAnoDet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:fontFamily="@font/roboto"
         android:layout_marginTop="10dp"
-        android:hint="Informe o ano do carro"/>
+        android:hint="Informe o ano do carro"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModeloDet"
+        tools:layout_editor_absoluteX="20dp" />
 
     <EditText
         android:id="@+id/editTextCorDet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:hint="Informe a cor do carro"
         android:layout_marginTop="10dp"
-        android:hint="Informe a cor do carro"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextAnoDet"
+        tools:layout_editor_absoluteX="20dp" />
 
     <EditText
         android:id="@+id/editTextValorDet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:hint="Informe o valor do carro"
         android:inputType="numberDecimal"
         android:layout_marginTop="10dp"
-        android:hint="Informe o valor do carro"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextCorDet"
+        tools:layout_editor_absoluteX="37dp" />
 
     <Button
         android:id="@+id/buttonAlterar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Atualizar"/>
-</LinearLayout>
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_black"
+        android:text="Atualizar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
+</android.support.constraint.ConstraintLayout>

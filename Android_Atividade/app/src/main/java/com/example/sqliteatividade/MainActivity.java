@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
 
-        menu.add(0,0,0, "Detalhes / Alteração");
+        menu.add(0,0,0, "Atualizar");
         menu.add(0,1,1, "Excluir");
     }
 

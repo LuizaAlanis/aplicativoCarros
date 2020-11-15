@@ -2,36 +2,51 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:padding="30dp"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/buttonAdicionarNovo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonAdicionarNovo"
-        android:text="Adicionar novo carro" />
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_black"
+        android:text="Adicionar novo carro"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:id="@+id/radioGroup"
         android:layout_height="wrap_content" >
+
         <RadioButton
             android:id="@+id/radioButtonMenorMaior"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ordenar do mais barato para o mais caro" />
+            android:fontFamily="@font/roboto"
+            android:text="Ordenar do mais barato para o mais caro"
+            android:textSize="14sp" />
 
         <RadioButton
             android:id="@+id/radioButtonMaiorMenor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ordenar do mais caro para o mais barato" />
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/roboto"
+            android:text="Ordenar do mais caro para o mais barato"
+            android:textSize="14sp" />
     </RadioGroup>
 
     <ListView
+        android:id="@+id/listViewCarro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listViewCarro"/>
+        android:textAlignment="gravity"
+        android:textDirection="firstStrong"
+        android:textFilterEnabled="false" />
 </LinearLayout>

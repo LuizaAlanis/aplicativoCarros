@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/archivo_black</item>
+        <item>@font/josefin_sans</item>
+        <item>@font/julius_sans_one</item>
+        <item>@font/quicksand_light</item>
+        <item>@font/roboto</item>
+        <item>@font/roboto_black</item>
+        <item>@font/source_code_pro_extralight</item>
+        <item>@font/work_sans</item>
+    </array>
+</resources>

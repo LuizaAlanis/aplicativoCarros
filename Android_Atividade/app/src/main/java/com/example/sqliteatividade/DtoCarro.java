@@ -13,7 +13,17 @@ public class DtoCarro {
     @NonNull
     @Override
     public String toString() {
-        return id + " - " + modelo + " - " + marca + " - " + ano + " - " + cor + " - " + valor;
+        return    System.getProperty ("line.separator")
+                + "Modelo:          " + modelo
+                + System.getProperty ("line.separator")
+                + "Marca:            " + marca
+                + System.getProperty ("line.separator")
+                + "Cor:                 " +cor
+                + System.getProperty ("line.separator")
+                + "Preço:             R$ " + valor
+                + System.getProperty ("line.separator")
+                + "Ano:                " + ano
+                + System.getProperty ("line.separator");
     }
 
     public DtoCarro(int ano, String marca, String modelo, String cor, double valor) {

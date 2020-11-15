@@ -29,9 +29,9 @@ public class DetalhesActivity extends AppCompatActivity {
         id = bundle.getInt("Id");
         editTextMarcaDet.setText(bundle.getString("Marca"));
         editTextModeloDet.setText(bundle.getString("Modelo"));
-        editTextAnoDet.setText(bundle.getString("Ano"));
+        editTextAnoDet.setText(bundle.getInt("Ano")+"");
         editTextCorDet.setText(bundle.getString("Cor"));
-        editTextValorDet.setText(bundle.getString("Valor"));
+        editTextValorDet.setText(bundle.getDouble("Valor")+"");
 
         buttonAlterar.setOnClickListener(new View.OnClickListener() {
             @Override

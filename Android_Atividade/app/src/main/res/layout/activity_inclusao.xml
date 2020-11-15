@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="20dp"
+    android:padding="30dp"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,53 +9,79 @@
     tools:context=".InclusaoActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30dp"
+        android:text="Novo carro"
         android:textAlignment="center"
-        android:text="Novo carro" />
+        android:textSize="30dp"
+        android:fontFamily="@font/roboto_black"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextMarca"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:hint="Informe a marca do carro"/>
+        android:hint="Informe a marca do carro"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/roboto"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_editor_absoluteX="82dp" />
 
     <EditText
         android:id="@+id/editTextModelo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Informe o modelo do carro"
+        android:fontFamily="@font/roboto"
         android:layout_marginTop="10dp"
-        android:hint="Informe o modelo do carro"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextMarca"
+        tools:layout_editor_absoluteX="24dp" />
 
     <EditText
         android:id="@+id/editTextAno"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Informe o ano do carro"
         android:inputType="number"
         android:layout_marginTop="10dp"
-        android:hint="Informe o ano do carro"/>
+        android:fontFamily="@font/roboto"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModelo"
+        tools:layout_editor_absoluteX="20dp" />
 
     <EditText
         android:id="@+id/editTextCor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Informe a cor do carro"
+        android:fontFamily="@font/roboto"
         android:layout_marginTop="10dp"
-        android:hint="Informe a cor do carro"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextAno"
+        tools:layout_editor_absoluteX="20dp" />
 
     <EditText
         android:id="@+id/editTextValor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Informe o valor do carro"
         android:inputType="numberDecimal"
+        android:fontFamily="@font/roboto"
         android:layout_marginTop="10dp"
-        android:hint="Informe o valor do carro"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextCor"
+        tools:layout_editor_absoluteX="37dp" />
 
     <Button
         android:id="@+id/buttonIncluir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Adicionar"/>
-</LinearLayout>
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboto_black"
+        android:text="Adicionar"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
+</android.support.constraint.ConstraintLayout>
